@@ -3,7 +3,7 @@ import { CausesCarousel } from "@/components/CausesCarousel";
 import { ConsequencesGrid } from "@/components/ConsequencesGrid";
 import { ImpactCharts } from "@/components/ImpactCharts";
 import { AddictionCycle } from "@/components/AddictionCycle";
-import { QuickFactsGrid } from "@/components/QuickFactsGrid";
+import { PropositionalLogicSection } from "@/components/PropositionalLogicSection";
 import { CTASection } from "@/components/CTASection";
 import { AlertTriangle } from "lucide-react";
 
@@ -77,18 +77,21 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Fatos Rápidos */}
+      {/* Lógica Proposicional */}
       <section className="py-20 bg-background">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12 px-4">
+            <div className="inline-flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full mb-4">
+              <span className="text-sm font-semibold text-primary">Matemática Discreta</span>
+            </div>
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Fatos Essenciais Sobre o Vício
+              A Lógica Por Trás do Vício
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Informações cruciais que todos deveriam saber sobre apostas e jogos de azar.
+              Entenda através da lógica proposicional como o vício em apostas se forma e suas consequências inevitáveis.
             </p>
           </div>
-          <QuickFactsGrid />
+          <PropositionalLogicSection />
         </div>
       </section>
 
