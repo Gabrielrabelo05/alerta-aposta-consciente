@@ -96,7 +96,7 @@ const Index = () => {
       </section>
 
       {/* CTA de Ajuda */}
-      <CTASection />
+      {/* <CTASection /> */}
 
       {/* Rodapé */}
       <footer className="bg-primary text-primary-foreground py-12">
