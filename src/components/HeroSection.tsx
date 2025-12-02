@@ -28,49 +28,55 @@ export function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left side - Text content */}
           <div className="space-y-8">
-            <div className="inline-flex items-center gap-2 bg-alert/30 backdrop-blur-sm px-5 py-3 rounded-full border-2 border-alert animate-fade-in">
-              <AlertCircle className="h-6 w-6 text-alert-foreground" />
-              <span className="text-base font-bold text-alert-foreground">ALERTA DE SAÚDE PÚBLICA</span>
+            <div className="inline-flex items-center gap-2 bg-alert/30 backdrop-blur-sm px-3 sm:px-5 py-2 sm:py-3 rounded-full border-2 border-alert animate-fade-in">
+              <AlertCircle className="h-5 w-5 sm:h-6 sm:w-6 text-alert-foreground" />
+              <span className="text-sm sm:text-base font-bold text-alert-foreground">ALERTA DE SAÚDE PÚBLICA</span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-7xl font-black text-primary-foreground leading-[1.1] animate-fade-in" style={{ animationDelay: '0.2s' }}>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-primary-foreground leading-[1.1] animate-fade-in" style={{ animationDelay: '0.2s' }}>
               O preço oculto das{" "}
               <span className="text-alert drop-shadow-[0_0_30px_rgba(255,87,51,0.5)]">apostas</span>
             </h1>
 
-            <div className="space-y-4 animate-fade-in" style={{ animationDelay: '0.4s' }}>
-              <p className="text-xl md:text-2xl text-primary-foreground font-semibold leading-relaxed">
+            <div className="space-y-3 sm:space-y-4 animate-fade-in" style={{ animationDelay: '0.4s' }}>
+              <p className="text-lg sm:text-xl md:text-2xl text-primary-foreground font-semibold leading-relaxed">
                 Como a ilusão do dinheiro rápido e a dopamina dos apps estão destruindo vidas, famílias e carreiras.
               </p>
               
-              <p className="text-lg text-primary-foreground/90 leading-relaxed">
+              <p className="text-base sm:text-lg text-primary-foreground/90 leading-relaxed">
                 Milhões de brasileiros estão presos em um ciclo vicioso que começa com a promessa de ganhos fáceis e termina em dívidas, conflitos familiares e perda total de controle.
               </p>
             </div>
 
             {/* Quick stats */}
-            <div className="grid grid-cols-3 gap-4 pt-4 animate-fade-in" style={{ animationDelay: '0.6s' }}>
-              <div className="bg-background/10 backdrop-blur-sm p-4 rounded-lg border border-alert/30">
-                <TrendingDown className="h-8 w-8 text-alert mb-2" />
-                <p className="text-2xl font-bold text-primary-foreground">67%</p>
-                <p className="text-xs text-primary-foreground/80">perdem mais do que ganham</p>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 pt-4 animate-fade-in" style={{ animationDelay: '0.6s' }}>
+              <div className="bg-background/10 backdrop-blur-sm p-3 sm:p-4 rounded-lg border border-alert/30 flex sm:block items-center gap-3">
+                <TrendingDown className="h-6 w-6 sm:h-8 sm:w-8 text-alert sm:mb-2" />
+                <div className="flex sm:block items-baseline gap-2">
+                  <p className="text-xl sm:text-2xl font-bold text-primary-foreground">67%</p>
+                  <p className="text-xs text-primary-foreground/80">perdem mais do que ganham</p>
+                </div>
               </div>
-              <div className="bg-background/10 backdrop-blur-sm p-4 rounded-lg border border-alert/30">
-                <Users className="h-8 w-8 text-alert mb-2" />
-                <p className="text-2xl font-bold text-primary-foreground">3x</p>
-                <p className="text-xs text-primary-foreground/80">mais conflitos familiares</p>
+              <div className="bg-background/10 backdrop-blur-sm p-3 sm:p-4 rounded-lg border border-alert/30 flex sm:block items-center gap-3">
+                <Users className="h-6 w-6 sm:h-8 sm:w-8 text-alert sm:mb-2" />
+                <div className="flex sm:block items-baseline gap-2">
+                  <p className="text-xl sm:text-2xl font-bold text-primary-foreground">3x</p>
+                  <p className="text-xs text-primary-foreground/80">mais conflitos familiares</p>
+                </div>
               </div>
-              <div className="bg-background/10 backdrop-blur-sm p-4 rounded-lg border border-alert/30">
-                <CreditCard className="h-8 w-8 text-alert mb-2" />
-                <p className="text-2xl font-bold text-primary-foreground">R$ 30k</p>
-                <p className="text-xs text-primary-foreground/80">dívida média acumulada</p>
+              <div className="bg-background/10 backdrop-blur-sm p-3 sm:p-4 rounded-lg border border-alert/30 flex sm:block items-center gap-3">
+                <CreditCard className="h-6 w-6 sm:h-8 sm:w-8 text-alert sm:mb-2" />
+                <div className="flex sm:block items-baseline gap-2">
+                  <p className="text-xl sm:text-2xl font-bold text-primary-foreground">R$ 30k</p>
+                  <p className="text-xs text-primary-foreground/80">dívida média acumulada</p>
+                </div>
               </div>
             </div>
 
             <Button
               size="lg"
               onClick={scrollToContent}
-              className="bg-alert hover:bg-alert/90 text-alert-foreground font-bold text-xl px-10 py-7 h-auto shadow-[0_0_30px_rgba(255,87,51,0.4)] transition-all hover:scale-105 hover:shadow-[0_0_40px_rgba(255,87,51,0.6)] animate-fade-in"
+              className="bg-alert hover:bg-alert/90 text-alert-foreground font-bold text-base sm:text-xl px-6 sm:px-10 py-5 sm:py-7 h-auto shadow-[0_0_30px_rgba(255,87,51,0.4)] transition-all hover:scale-105 hover:shadow-[0_0_40px_rgba(255,87,51,0.6)] animate-fade-in w-full sm:w-auto"
               style={{ animationDelay: '0.8s' }}
             >
               Entenda como esse vício funciona
@@ -108,12 +114,12 @@ export function HeroSection() {
         </div>
 
         {/* Mobile image */}
-        <div className="lg:hidden mt-12 animate-fade-in" style={{ animationDelay: '0.5s' }}>
+        <div className="lg:hidden mt-8 sm:mt-12 animate-fade-in" style={{ animationDelay: '0.5s' }}>
           <div className="relative rounded-xl overflow-hidden shadow-xl border-2 border-alert/30">
             <img 
               src={heroImage} 
               alt="Impacto das apostas na vida real"
-              className="w-full h-[300px] object-cover"
+              className="w-full h-[200px] sm:h-[300px] object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/40 to-transparent" />
           </div>
