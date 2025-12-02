@@ -60,15 +60,15 @@ export function HeroSection() {
               <div className="bg-background/10 backdrop-blur-sm p-3 sm:p-4 rounded-lg border border-alert/30 flex sm:block items-center gap-3">
                 <Users className="h-6 w-6 sm:h-8 sm:w-8 text-alert sm:mb-2" />
                 <div className="flex sm:block items-baseline gap-2">
-                  <p className="text-xl sm:text-2xl font-bold text-primary-foreground">3x</p>
-                  <p className="text-xs text-primary-foreground/80">mais conflitos familiares</p>
+                  <p className="text-xl sm:text-2xl font-bold text-primary-foreground">2x</p>
+                  <p className="text-xs text-primary-foreground/80">conflitos familiares</p>
                 </div>
               </div>
               <div className="bg-background/10 backdrop-blur-sm p-3 sm:p-4 rounded-lg border border-alert/30 flex sm:block items-center gap-3">
                 <CreditCard className="h-6 w-6 sm:h-8 sm:w-8 text-alert sm:mb-2" />
                 <div className="flex sm:block items-baseline gap-2">
-                  <p className="text-xl sm:text-2xl font-bold text-primary-foreground">R$ 30k</p>
-                  <p className="text-xs text-primary-foreground/80">dívida média acumulada</p>
+                  <p className="text-xl sm:text-2xl font-bold text-primary-foreground">29%</p>
+                  <p className="text-xs text-primary-foreground/80">negativados por aposta</p>
                 </div>
               </div>
             </div>
